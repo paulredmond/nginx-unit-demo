@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+container=$(docker run --rm -d -v $(pwd)/src:/www/laravel -p 8300:8300 nginx-unit)
+docker exec -ti $container curl -X PUT -d @/www/laravel/app.json --unix-socket /var/run/control.unit.sock http://localhost
+
+echo "Container running @ $container"
+echo "Here's the complete configuration object:"
+docker exec -ti $container curl --unix-socket /var/run/control.unit.sock http://localhost

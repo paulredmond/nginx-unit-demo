@@ -16,4 +16,4 @@ COPY ./src /www/laravel
 
 RUN chown -R www-data:www-data /www/laravel
 
-CMD ["unitd", "--no-daemon", "--log", "/dev/stdout"]
+CMD ["unitd", "--no-daemon"]
