@@ -1,0 +1,17 @@
+{
+    "listeners": {
+        "*:8300": {
+            "application": "laravel-demo"
+        }
+    },
+    "applications": {
+        "laravel-demo": {
+            "type": "php",
+            "workers": 20,
+            "user": "www-data",
+            "group": "www-data",
+            "root": "/www/laravel/public",
+            "index": "index.php"
+        }
+    }
+}
