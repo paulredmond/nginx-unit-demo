@@ -14,6 +14,6 @@ WORKDIR /www/laravel
 
 COPY ./src /www/laravel
 
-RUN chown -R www-data:www-data /www/laravel
+RUN chown -R www-data:www-data /www/laravel/storage /www/laravel/bootstrap
 
 CMD ["unitd", "--no-daemon"]
