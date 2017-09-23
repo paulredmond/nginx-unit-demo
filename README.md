@@ -4,7 +4,7 @@
 
 This is just an experiment so I didn't spend any time automating the setup of Laravel. You need to install and have [composer](https://getcomposer.org/) in your local path, and then run the following to set up the Laravel application:
 
-```
+```console
 $ cd src/
 $ cp .env.example .env
 $ composer install
@@ -16,7 +16,7 @@ $ cd ..
 
 To experiment with this container, you need to build it and then start it:
 
-```
+```console
 bin/build && bin/start
 ```
 
@@ -26,7 +26,7 @@ The application should be available at [http://localhost:8300](http://localhost:
 
 Here's how you would set up the configuration object inside the container using a Unix Socket:
 
-```
+```console
 $ docker exec -it the-container bash
 
 # In the container
