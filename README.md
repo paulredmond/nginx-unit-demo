@@ -2,6 +2,15 @@
 
 ## Setup
 
+This is just an experiment so I didn't spend any time automating the setup of Laravel. You need to install and have [composer](https://getcomposer.org/) in your local path, and then run the following to set up the Laravel application:
+
+```
+$ cd src/
+$ cp .env.example .env
+$ composer install
+$ php artisan key:generate
+```
+
 To experiment with this container, you need to build it and then start it:
 
 ```
