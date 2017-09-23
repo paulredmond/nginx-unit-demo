@@ -9,6 +9,9 @@ $ cd src/
 $ cp .env.example .env
 $ composer install
 $ php artisan key:generate
+
+# go back to the root to run build / start
+$ cd ..
 ```
 
 To experiment with this container, you need to build it and then start it:
