@@ -11,6 +11,7 @@
             "user": "www-data",
             "group": "www-data",
             "root": "/www/laravel/public",
+            "script": "index.php",
             "index": "index.php"
         }
     }
